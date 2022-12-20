@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:text="账号登录"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/D_number"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:hint="手机号"
+        android:layout_marginTop="40dp"
+        android:maxEms="1"
+        android:background="@drawable/bg_black"
+        android:padding="5dp"/>
+    <EditText
+        android:id="@+id/D_pas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:hint="密码"
+        android:inputType="numberPassword"
+        android:layout_marginTop="10dp"
+        android:maxEms="1"
+        android:background="@drawable/bg_black"
+        android:padding="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/D_deng"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:background="@drawable/bg_button_blue"
+            android:text="登录"
+            android:layout_marginRight="2dp"/>
+        <Button
+            android:id="@+id/D_zhu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:background="@drawable/bg_button_blue"
+            android:text="注册"
+            android:layout_marginLeft="2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
